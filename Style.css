@@ -29,9 +29,6 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
 }
 
-
-/* ∫ */
-
 a{
     cursor: pointer;
     text-decoration: underline;
