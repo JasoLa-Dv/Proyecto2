@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style.css"> 
- <title>CRUD</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>
+        Html CRUD
+    </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Help Line!</a>
@@ -35,45 +43,74 @@
         </div>
       </nav>
 
-      <img src="/fotos/reparacion.png" class="img-fluid rounded mx-auto d-block mt-5 m-5" >
+      <img id=imagcentral src="/fotos/reparacion.png" class="img-fluid rounded mx-auto d-block mt-5 m-5" >
+
+      <div class="row">
+        <div class="col-md-11 ms-md-auto">
+                <form class="m-5" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre*</label><label class="validation-error hide" id="fullNameValidationError">Este campo es requerido.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Descripcion</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Crear" class="btn btn-primary">
+                    </div>
+                </form>
+                </div>
+                </div>
+           
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
 
 
-      <div class="container ">
-        <div class="row">
 
-         <div class="col-md-11 ms-md-auto">
-                <form>
+    <div class="card text-center">
+        <div class="card-header">
+        
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">DIRECCIÓN</h5>
+          <p class="card-text">Av. Costanera Quilque Sur #1053</p>
+          <p class="card-text">Los Angeles</p>
+          <p class="card-text">Región del Bio Bio</p>
+          
+        </div>
+        <div class="card-footer text-muted">
+            © Copyright 2022 
+        </div>
+      </div>
 
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                      </div>
-            
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">telefono</label>
-                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
-                      </div>
-            
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Descripción equipo</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Crear</button>
-            
-                  </form>
-              </>
-
-    
-
-    <script src="/Java.js"></script>
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-   
-    
 </body>
+
 </html>
