@@ -53,7 +53,7 @@ function onEdit(td) {
     document.getElementById("description").value = selectedRow.cells[3].innerHTML;
 }
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.Name;
+    selectedRow.cells[0].innerHTML = formData.fullName;
     selectedRow.cells[1].innerHTML = formData.email;
     selectedRow.cells[2].innerHTML = formData.phone;
     selectedRow.cells[3].innerHTML = formData.description;
