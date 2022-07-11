@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <title>
-        CRUD
+        CRUD Proyecto 2
     </title>
     <link rel="stylesheet" href="Style.css">
 </head>
@@ -52,11 +52,7 @@
                         <label>Nombre*</label><label class="validation-error hide" id="fullNameValidationError">Este campo es requerido.</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div>
+                     <div>
                         <label>Teléfono</label>
                         <input type="text" name="phone" id="phone">
                     </div>
@@ -68,28 +64,28 @@
                         <input type="submit" value="Crear" class="btn btn-primary">
                     </div>
                 </form>
-                </div>
-                </div>
-           
-                <table class="list" id="clientesList" >
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Email</th>
-                            <th>Teléfono</th> 
-                            <th>Descripción</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
+          </div>
+      </div>
 
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
+      
+          <table class="list  table table-responsive-lg table-bordered" id="clientesList" >
+            <thead  class="table-dark">
+              <tr>
+                  <th>Nombre</th>
+                  <th>Teléfono</th> 
+                  <th>Descripción</th>
+                  <th></th>
+              </tr>
+           </thead>
+           <tbody>
 
+           </tbody>
+          
+        </table>
 
+       
+              
+       
 
     <div class="card text-center">
         <div class="card-header">
@@ -108,7 +104,6 @@
       </div>
 
     <script src="script.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
