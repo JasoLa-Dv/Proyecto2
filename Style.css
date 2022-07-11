@@ -1,24 +1,4 @@
 
-/* body > table{
-    width: 80%;
-} */
-/* 
-table{
-    border-collapse: collapse;
-} */
-/* table.list{
-    width:100%;  
-} */
-
-/* td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-} */
-/* tr:nth-child(even),table.list thead>tr {
-    background-color: #dddddd;
-} */
-
 input[type=text], input[type=number] {
     width: 100%;
     padding: 12px 20px;
@@ -29,12 +9,12 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
 }
 
-a{
+/* a{
     cursor: pointer;
     text-decoration: underline;
     color: #0000ee;
     margin-right: 4px;
-}
+} */
 
 label.validation-error{
     color:   red;
@@ -43,4 +23,9 @@ label.validation-error{
 
 .hide{
     display:none;
+}
+
+.imagCentral{
+
+    border-radius: 20px;
 }
