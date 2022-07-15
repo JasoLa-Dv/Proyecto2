@@ -9,12 +9,6 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
 }
 
-/* a{
-    cursor: pointer;
-    text-decoration: underline;
-    color: #0000ee;
-    margin-right: 4px;
-} */
 
 label.validation-error{
     color:   red;
@@ -23,9 +17,4 @@ label.validation-error{
 
 .hide{
     display:none;
-}
-
-.imagCentral{
-
-    border-radius: 20px;
 }
